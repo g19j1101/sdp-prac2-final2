@@ -1,0 +1,9 @@
+language: csharp
+solution: Oware.sln
+dotnet: 5.0
+script: 
+  -dotnet test
+dist: focal
+os:
+  - linux
+  - osx
