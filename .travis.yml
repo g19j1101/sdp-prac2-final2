@@ -1,10 +1,13 @@
 language: csharp
 solution: Oware.sln
 mono: none 
-dotnet: 5.0.201
-script: 
-  -dotnet restore 
-dist: focal
 os:
   - linux
   - osx
+dist: focal
+script: 
+  - dotnet test
+jobs:
+  include:
+    - dotnet: 5.0.201
+
